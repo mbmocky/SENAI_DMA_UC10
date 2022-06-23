@@ -1,9 +1,13 @@
 import java.sql.*;
 
+// Método realizado para permitir a inserção no banco de dados 
+
+
 public class DAO_Produtos {
 
     Conexao obj_conexao = new Conexao();
 
+// Método realizado para permitir a consulta no banco de dados 
     public void consultar(){
         obj_conexao.conexao();
         Statement stm = null;
@@ -27,6 +31,7 @@ public class DAO_Produtos {
         }
     }
 
+// Método realizado para permitir a inserção no banco de dados 
     public void inserir(Produto p){
         obj_conexao.conexao();
         PreparedStatement pst = null;
@@ -48,6 +53,7 @@ public class DAO_Produtos {
         }
     }
 
+// Método realizado para permitir a alteração no banco de dados 
     public void alterar(Produto p){
         obj_conexao.conexao();
         PreparedStatement pst = null;
@@ -70,6 +76,7 @@ public class DAO_Produtos {
         }
     }
 
+// Método realizado para permitir excluir no banco de dados 
     public void excluir(int id){
         obj_conexao.conexao();
         PreparedStatement pst = null;

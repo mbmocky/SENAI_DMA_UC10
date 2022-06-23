@@ -4,6 +4,7 @@ public class DAO_Unidades {
 
     Conexao obj_conexao = new Conexao();
 
+// Método realizado para permitir a consulta no banco de dados 
     public void consultar(){
         obj_conexao.conexao();
         Statement stm = null;
@@ -25,6 +26,7 @@ public class DAO_Unidades {
         }
     }
 
+// Método realizado para permitir a inserção no banco de dados 
     public void inserir(Unidade u){
         obj_conexao.conexao();
         PreparedStatement pst = null;
@@ -43,6 +45,7 @@ public class DAO_Unidades {
         }
     }
 
+// Método realizado para permitir a alteração no banco de dados 
     public void alterar(Unidade u){
         obj_conexao.conexao();
         PreparedStatement pst = null;
@@ -62,6 +65,7 @@ public class DAO_Unidades {
         }
     }
 
+// Método realizado para permitir a exclusão no banco de dados 
     public void excluir(int id){
         obj_conexao.conexao();
         PreparedStatement pst = null;
